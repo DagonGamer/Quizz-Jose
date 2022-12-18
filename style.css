@@ -1,0 +1,89 @@
+* {
+    overflow: hidden;
+    user-select: none;
+    font-family: Arial;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #444;
+
+    margin: 0px;
+    position: fixed;
+    left: 0px;
+
+    transition: all 1s;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100vh;
+}
+
+/* Divs de linea */
+
+div.Marcador {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+
+    width: 20vw;
+    height: 5vw;
+    padding: 2.5vw;
+    background: #fff;
+
+    border-radius: 0px 0px 0px 2.5vw;
+}
+
+div.Marcador p {
+    margin: 0px;
+    font-size: 5vw;
+    height: 5vw;
+}
+
+/* Divs de Bloque */
+
+div.Bloque  {
+    width: 85vw;
+    height: 85vw;
+    background: #fff;
+    border-radius: 2.5vw;
+    padding: 2.5vw;
+
+    margin: calc( ( 100vh - 90vw ) / 2 ) auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.Bloque h2 {
+    font-size: 5vw;
+    text-align: justify;
+    padding: 0px 4vw;
+}
+
+div.Bloque div.Respuestas {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.Bloque div.Respuestas div {
+    width: 90%;
+    padding: 0px 5%;
+    height: auto;
+    background: #ddd;
+    border-radius: 1vw;
+    flex-grow: 1;
+    font-size: 4vw;
+    margin: 1vw 0px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.Bloque div.Respuestas div p {
+    margin: 0px;
+}
