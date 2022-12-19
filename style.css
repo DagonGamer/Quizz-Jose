@@ -87,3 +87,8 @@ div.Bloque div.Respuestas div {
 div.Bloque div.Respuestas div p {
     margin: 0px;
 }
+
+img {
+    height: 50vw;
+    object-fit: contain;
+  }
